@@ -13,6 +13,9 @@
     
 
     
+        <meta name="description" content="IntroductionI recently got my hands on an intriguing IoT gadget.  
+It’s hard to imagine how so many features fit onto a circuit board the size of a th"/>
+    
 
     <!--Author-->
     
@@ -25,6 +28,9 @@
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="IntroductionI recently got my hands on an intriguing IoT gadget.  
+It’s hard to imagine how so many features fit onto a circuit board the size of a th"/>
     
 
     <!--Open Graph Site Name-->
@@ -51,7 +57,7 @@
 
     <!-- Title -->
     
-    <title>Archives: 2024 - IoT Playground</title>
+    <title>IoT Playground</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -155,49 +161,73 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>2024</h1>
+                <div class="post-heading">
+                    <h1>Untitled</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2024-12-23
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2024/12/23/iot_playground_intro/">
-        <h1 class="post-title archive">
-            Untitled
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2024-12-23
-    </p>
-</div>
-            
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>I recently got my hands on an intriguing IoT gadget.<br><img src="https://static-cdn.m5stack.com/resource/docs/products/core/m5stickc_plus/m5stickc_plus_01.webp" alt="M5stickC Plus" title="M5">  </p>
+<p>It’s hard to imagine how so many features fit onto a circuit board the size of a thumb. Its compact body integrates rich hardware resources, such as infrared, RTC, microphone, LED, IMU, buttons, PMU, and more.  </p>
+<p>Improvements over the regular StickC include a buzzer, a larger screen (1.14-inch, 135x240 resolution LCD screen), and a 120mAh battery.  </p>
+<p>Although this development board is small, it’s undoubtedly powerful. Since I’m currently seeking jobs related to embedded systems, this device is perfect for researching projects and sparked some creative ideas. I plan to connect it with my <strong>Raspberry Pi 3</strong> to collect data from IoT devices and build an IoT project, leading to the idea for this article.  </p>
+<p><a target="_blank" rel="noopener" href="https://docs.m5stack.com/en/core/m5stickc_plus">M5stickC Plus Documentation</a>  </p>
+<hr>
+<h2 id="From-Arduino-to-RTOS-Why-Use-RTOS-for-This-Project"><a href="#From-Arduino-to-RTOS-Why-Use-RTOS-for-This-Project" class="headerlink" title="From Arduino to RTOS - Why Use RTOS for This Project?"></a>From Arduino to RTOS - Why Use RTOS for This Project?</h2><p>The M5stickC Plus supports numerous projects on Arduino and M5Burner, so why use RTOS instead of continuing with Arduino?  </p>
+<p>Aside from my personal interest in researching RTOS, there are several significant advantages to using it:  </p>
+<ul>
+<li><strong>Task Management</strong>: RTOS enables efficient scheduling of multiple tasks with priorities, which is crucial for real-time data processing.  </li>
+<li><strong>Scalability</strong>: Makes it easier to integrate multiple modules, such as sensors, communication stacks, and networking interfaces.  </li>
+<li><strong>Stability and Reliability</strong>: Ensures deterministic behavior, reducing the chances of system crashes or latency issues.</li>
 </ul>
+<p>The good news is that ZephyrRTOS already supports this platform, which can reduce development time.  </p>
+<p>You can find the official ZephyrRTOS support for M5stickC Plus here:<br><a target="_blank" rel="noopener" href="https://docs.zephyrproject.org/latest/boards/m5stack/m5stickc_plus/doc/index.html">ZephyrRTOS Official Support for M5stickC Plus</a>  </p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr />
