@@ -4,6 +4,8 @@
 title: M5stickC Plus with ZephyrRTOS
 subtitle: IoT Sensor Node in a Wireless MQTT Network - Intro
 date: 2024-12-23
+tag: M5stickCPlus
+category: DIY
 ---
 
 ## Introduction  
