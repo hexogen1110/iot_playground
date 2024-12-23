@@ -104,3 +104,5 @@ deploy:
   type: git
   repo: git@github.com:hexogen1110/iot_playground.git
   branch: main
+
+github_url: https://hexogen1110.github.io/iot_playground
