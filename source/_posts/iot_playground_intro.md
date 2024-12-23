@@ -1,12 +1,12 @@
 ---
 
-# IoT Playground  
 # M5stickC Plus with ZephyrRTOS: IoT Sensor Node in a Wireless MQTT Network  
-
+title: M5stickC Plus with ZephyrRTOS
+subtitle: IoT Sensor Node in a Wireless MQTT Network - Intro
+date: 2024-12-23
 ---
 
-# Introduction  
-## Foreword  
+## Introduction  
 
 I recently got my hands on an intriguing IoT gadget.  
 ![M5stickC Plus](https://static-cdn.m5stack.com/resource/docs/products/core/m5stickc_plus/m5stickc_plus_01.webp "M5")  
