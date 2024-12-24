@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Step 1: Setting Up the Development Environment on macOS1. Install Required Tools
+Install Homebrew:1/bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubu"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Mike Chen"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="M5stickC Plus with ZephyrRTOS"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Step 1: Setting Up the Development Environment on macOS1. Install Required Tools
+Install Homebrew:1/bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubu"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="IoT Playground"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://hexogen1110.github.io/iot_playground./img/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://hexogen1110.github.io/iot_playground./img/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>M5stickC Plus with ZephyrRTOS - IoT Playground</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/iot_playground/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/iot_playground/">IoT Playground</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/iot_playground/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/iot_playground/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/iot_playground/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/hexogen1110">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/iot_playground/./img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>M5stickC Plus with ZephyrRTOS</h1>
+                    
+                    <h2 class="post-subheading">
+                        Basic Environment Setup and Build Commands
+                    </h2>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2024-12-24
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/iot_playground/tags/M5stickCPlus/">#M5stickCPlus</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/iot_playground/categories/DIY/">DIY</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Step-1-Setting-Up-the-Development-Environment-on-macOS"><a href="#Step-1-Setting-Up-the-Development-Environment-on-macOS" class="headerlink" title="Step 1: Setting Up the Development Environment on macOS"></a>Step 1: Setting Up the Development Environment on macOS</h1><h2 id="1-Install-Required-Tools"><a href="#1-Install-Required-Tools" class="headerlink" title="1. Install Required Tools"></a>1. Install Required Tools</h2><ul>
+<li><strong>Install Homebrew:</strong><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li><strong>Install CMake, Ninja, and Python:</strong><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install cmake ninja python</span><br></pre></td></tr></table></figure></li>
+<li><strong>Install the Zephyr SDK:</strong><ol>
+<li>Download the SDK from the <a target="_blank" rel="noopener" href="https://github.com/zephyrproject-rtos/sdk-ng/releases">Zephyr SDK Downloads</a> page.</li>
+<li>Extract the SDK and install it:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -xvf zephyr-sdk-&lt;version&gt;.tar.gz</span><br><span class="line">./zephyr-sdk-&lt;version&gt;/setup.sh</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ul>
+<h2 id="2-Clone-the-Zephyr-Repository-and-Configure-the-Environment"><a href="#2-Clone-the-Zephyr-Repository-and-Configure-the-Environment" class="headerlink" title="2. Clone the Zephyr Repository and Configure the Environment"></a>2. Clone the Zephyr Repository and Configure the Environment</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/zephyrproject-rtos/zephyr.git</span><br><span class="line"><span class="built_in">cd</span> zephyr</span><br><span class="line">west init -l .</span><br><span class="line">west update</span><br><span class="line">west zephyr-export</span><br></pre></td></tr></table></figure>
+<p>These steps ensure the project directory is fully initialized with all required modules.</p>
+<h2 id="3-Set-Up-Environment-Variables"><a href="#3-Set-Up-Environment-Variables" class="headerlink" title="3. Set Up Environment Variables"></a>3. Set Up Environment Variables</h2><p>Refer to <a target="_blank" rel="noopener" href="https://docs.zephyrproject.org/latest/getting_started/index.html">Zephyr’s documentation</a> for detailed instructions on configuring environment variables.</p>
+<h2 id="4-Create-Your-Own-Project"><a href="#4-Create-Your-Own-Project" class="headerlink" title="4. Create Your Own Project"></a>4. Create Your Own Project</h2><p>Create a new document under <code>/zephyr/sample/</code> to start building your own project:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /zephyr/sample/your_project</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-Using-west-Commands-to-Build-Your-Project"><a href="#5-Using-west-Commands-to-Build-Your-Project" class="headerlink" title="5. Using west Commands to Build Your Project"></a>5. Using <code>west</code> Commands to Build Your Project</h2><p>After creating your project, use the following <code>west</code> commands to build and manage it in the terminal:</p>
+<ul>
+<li><p><strong>Build the Project:</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">west build -b &lt;board_name&gt; /zephyr/sample/your_project</span><br></pre></td></tr></table></figure>
+<p>Replace <code>&lt;board_name&gt;</code> with the target board name (e.g., for m5stickC plus, I choose <code>m5stickc_plus/esp32/procpu</code>, and specify the module we need to build. For example, we use <code>samples/hello_world</code> as our first step).<br><code>-p</code> for –pristine, always clean before build</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">west build -b m5stickc_plus/esp32/procpu samples/hello_world -p</span><br></pre></td></tr></table></figure>
+<p>Note:<br>During the first boot, Zephyr RTOS reports that the chip revision 1 used in the M5StickC Plus is outdated. To support this older hardware version, you need to enable <code>CONFIG_ESP32_USE_UNSUPPORTED_REVISION=y</code> in the <code>prj.conf</code> file</p>
+</li>
+<li><p><strong>Clean the Build Directory:</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">west build -c</span><br></pre></td></tr></table></figure>
+<p>This command cleans the build directory before starting a fresh build.</p>
+</li>
+<li><p><strong>Flash the Built Firmware to the Target Board:</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">west flash --esp-baud-rate 115200</span><br></pre></td></tr></table></figure>
+<p>This requires the target board to be connected to your computer. For ESP boards, set the baud rate to 115200, as there is a known issue in some forums where the west flash command may fail at lower baud rates.</p>
+</li>
+<li><p><strong>Run a Debug Session:</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">west debug</span><br></pre></td></tr></table></figure>
+<p>This starts a debug session if the board and debugger are properly configured.</p>
+</li>
+<li><p><strong>Open a Serial Console:</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">west espressif monitor</span><br></pre></td></tr></table></figure>
+<p>Use this to interact with the board’s serial interface.<br>Connect the device to USB then you will see the boot log from serial outpout:<br><img src="/iot_playground/imgs/hello_world.png" alt="hello world">.<br>For more advanced commands, refer to <a target="_blank" rel="noopener" href="https://docs.zephyrproject.org/latest/guides/west/index.html">Zephyr’s <code>west</code> documentation</a>.</p>
+</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/hexogen1110" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="www.linkedin.com/in/mike-chen-16a441136" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2024 Mike Chen<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
