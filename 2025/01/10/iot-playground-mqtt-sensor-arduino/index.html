@@ -214,7 +214,7 @@
 <hr>
 <h3 id="Article-Start"><a href="#Article-Start" class="headerlink" title="Article Start"></a><strong>Article Start</strong></h3><p>My goal is to use the M5stickC Plus as an IoT sensor node that periodically reads data and transmits it via the MQTT protocol to my Raspberry Pi 3 (MQTT broker). The Raspberry Pi 3 will store this information, and I can also use my smartphone as an MQTT subscriber to receive the data in real-time.  </p>
 <hr>
-<h3 id="Diagram"><a href="#Diagram" class="headerlink" title="Diagram"></a><strong>Diagram</strong></h3><p><img src="/iot_playground/iot-playground-mqtt-sensor-arduino/MQTT_diagram.drawio.png" alt="Architecture Diagram">  </p>
+<h3 id="Diagram"><a href="#Diagram" class="headerlink" title="Diagram"></a><strong>Diagram</strong></h3><p><img src="/iot_playground/imgs/MQTT_diagram.drawio.png" alt="Architecture Diagram">  </p>
 <hr>
 <h3 id="Introduction-to-MQTT"><a href="#Introduction-to-MQTT" class="headerlink" title="Introduction to MQTT"></a><strong>Introduction to MQTT</strong></h3><p>MQTT (Message Queuing Telemetry Transport) is a lightweight and simple communication protocol widely used in IoT applications. It enables devices to communicate through small data packets, with a minimum control message size of just 2 bytes. This makes it efficient in terms of bandwidth and power usage. MQTT is highly reliable, scalable, and efficient, making it ideal for scenarios like IoT, instant messaging, and remote control.  </p>
 <h4 id="MQTT-Message-Specification"><a href="#MQTT-Message-Specification" class="headerlink" title="MQTT Message Specification"></a><strong>MQTT Message Specification</strong></h4><p>In 1999, IBM introduced the first version of the MQTT protocol, designed with a “publish&#x2F;subscribe” model to meet the needs of simplicity, intermittent connectivity, and lightweight transmission. Below are explanations of its publish&#x2F;subscribe model, topic naming, and QoS (Quality of Service) settings.  </p>
@@ -260,7 +260,7 @@ sudo service mosquitto start
 <h3 id="Results"><a href="#Results" class="headerlink" title="Results"></a><strong>Results</strong></h3><p>On the Raspberry Pi (Subscriber side), run the following command in the terminal, where <code>[IP]</code> is the MQTT broker’s IP, and <code>[topic]</code> is the topic name (<code>home/IoT1/Temp_Humi</code>):  </p>
 <pre><code class="bash">mosquitto_sub -h [IP] -t [topic]
 </code></pre>
-<p><img src="/iot_playground/iot-playground-mqtt-sensor-arduino/mqtt_sub_example.png" alt="MQTT Subscriber Example">  </p>
+<p><img src="/iot_playground/imgs/mqtt_sub_example.png" alt="MQTT Subscriber Example">  </p>
 <h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h3><p>After spending weeks studying ZephyrRTOS, I got stuck on unexpected issues. However, with Arduino, I was able to quickly validate the concept and feasibility of this experiment, and I plan to revisit the original approach later.</p>
 
 
